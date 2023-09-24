@@ -4,7 +4,6 @@ from Controller.FunctionController import (
     generate_answer,
     message_parser,
     send_message_telegram,
-    send_photo_telegram,
 )
 
 app = Flask(__name__)
