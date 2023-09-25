@@ -47,10 +47,3 @@ def send_message_telegram(chat_id, text):
   payload = {'chat_id': chat_id, 'text': text}
   response = requests.post(url, json=payload)
   return response
-
-
-def send_photo_telegram(chat_id, photo_url):
-  url = f'https://api.telegram.org/bot{token}/sendPhoto'
-  payload = {'chat_id': chat_id, 'photo': photo_url}
-  response = requests.post(url, json=payload)
-  return response
